@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Blog do torrinha</h2>
+        <a href="{% url 'sobre' %}">Sobre</a>
+    </header>
+    {% block centro %}
+
+    {% endblock %}
+</body>
+<style>
+    header{
+        background-color: yellowgreen;
+        border: greenyellow solid 4px;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header h2{
+        color: white;
+    }
+    header a:hover{
+        text-decoration: underline;
+    }
+</style>
+</html>

@@ -15,3 +15,4 @@ class Comidas(models.Model):
     nome = models.CharField(max_length=50)
     descricao = models.TextField()
     ranking = models.CharField(max_length=1)
+    imagem = models.ImageField(upload_to='imagens/')
